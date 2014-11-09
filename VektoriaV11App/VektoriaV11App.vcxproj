@@ -86,6 +86,7 @@
     <ClInclude Include="Level1Part2.h" />
     <ClInclude Include="Level1Part3.h" />
     <ClInclude Include="LevelLoader.h" />
+    <ClInclude Include="level\level1\StoneHenge.h" />
     <ClInclude Include="MapPart.h" />
     <ClInclude Include="MapPartManager.h" />
     <ClInclude Include="Player.h" />
@@ -106,6 +107,7 @@
     <ClCompile Include="Level1Part2.cpp" />
     <ClCompile Include="Level1Part3.cpp" />
     <ClCompile Include="LevelLoader.cpp" />
+    <ClCompile Include="level\level1\StoneHenge.cpp" />
     <ClCompile Include="MapPart.cpp" />
     <ClCompile Include="MapPartManager.cpp" />
     <ClCompile Include="Player.cpp" />

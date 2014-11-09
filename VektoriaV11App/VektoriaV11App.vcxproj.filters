@@ -102,6 +102,9 @@
     <ClInclude Include="PlayerVisual.h">
       <Filter>Visual\GameObjectVisuals</Filter>
     </ClInclude>
+    <ClInclude Include="level\level1\StoneHenge.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Game.cpp">
@@ -154,6 +157,9 @@
     </ClCompile>
     <ClCompile Include="PlayerVisual.cpp">
       <Filter>Visual\GameObjectVisuals</Filter>
+    </ClCompile>
+    <ClCompile Include="level\level1\StoneHenge.cpp">
+      <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
