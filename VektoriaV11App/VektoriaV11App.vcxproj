@@ -50,6 +50,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LibraryPath>..\..\VektoriaV11;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+    <SourcePath>$(VC_SourcePath)\level;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -76,14 +77,40 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Camera.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="Level.h" />
+    <ClInclude Include="Level1.h" />
+    <ClInclude Include="Level1Part1.h" />
+    <ClInclude Include="Level1Part2.h" />
+    <ClInclude Include="Level1Part3.h" />
+    <ClInclude Include="LevelLoader.h" />
+    <ClInclude Include="MapPart.h" />
+    <ClInclude Include="MapPartManager.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="PlayerVisual.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="Scene.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="TangentSpaceHelper.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="Level.cpp" />
+    <ClCompile Include="Level1.cpp" />
+    <ClCompile Include="Level1Part1.cpp" />
+    <ClCompile Include="Level1Part2.cpp" />
+    <ClCompile Include="Level1Part3.cpp" />
+    <ClCompile Include="LevelLoader.cpp" />
+    <ClCompile Include="MapPart.cpp" />
+    <ClCompile Include="MapPartManager.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PlayerVisual.cpp" />
+    <ClCompile Include="Scene.cpp" />
     <ClCompile Include="stdafx.cpp" />
     <ClCompile Include="TangentSpaceHelper.cpp" />
     <ClCompile Include="VektoriaApp.cpp" />
