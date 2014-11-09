@@ -12,6 +12,7 @@ MapPart::~MapPart()
 {
 }
 
+
 // tickt alle Gameobjects durch
 void MapPart::tick(float deltaMillis, float time){
 	for (auto&& r : mGameObjects){
