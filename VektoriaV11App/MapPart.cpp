@@ -10,6 +10,8 @@ MapPart::MapPart(int nr)
 
 MapPart::~MapPart()
 {
+	// alle GameObjekte löschen (smart pointer)
+	mGameObjects.clear();
 }
 
 
@@ -36,7 +38,10 @@ void MapPart::setIsLastMapPartOfLevel(){
 }
 
 void MapPart::addGameObject(GameObject* obj){
+	// GameObject in Liste aufnehmen
 	mGameObjects.push_back(std::unique_ptr<GameObject>(obj));
+	// Placement an Mappart Placement anghängen
+	mRootPlacement.AddPlacement(obj->getPlacement());
 }
 
 

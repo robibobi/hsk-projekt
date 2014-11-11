@@ -102,8 +102,17 @@
     <ClInclude Include="PlayerVisual.h">
       <Filter>Visual\GameObjectVisuals</Filter>
     </ClInclude>
-    <ClInclude Include="level\level1\StoneHenge.h">
-      <Filter>Headerdateien</Filter>
+    <ClInclude Include="LochFalle.h">
+      <Filter>GameObjects\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="LochFalleVisual.h">
+      <Filter>Visual\GameObjectVisuals</Filter>
+    </ClInclude>
+    <ClInclude Include="Level1Part4.h">
+      <Filter>Visual\Levels\L_1\MapParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Level1Part5.h">
+      <Filter>Visual\Levels\L_1\MapParts</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -158,8 +167,17 @@
     <ClCompile Include="PlayerVisual.cpp">
       <Filter>Visual\GameObjectVisuals</Filter>
     </ClCompile>
-    <ClCompile Include="level\level1\StoneHenge.cpp">
-      <Filter>Quelldateien</Filter>
+    <ClCompile Include="LochFalle.cpp">
+      <Filter>GameObjects\QuellDateien</Filter>
+    </ClCompile>
+    <ClCompile Include="LochFalleVisual.cpp">
+      <Filter>Visual\GameObjectVisuals</Filter>
+    </ClCompile>
+    <ClCompile Include="Level1Part4.cpp">
+      <Filter>Visual\Levels\L_1\MapParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Level1Part5.cpp">
+      <Filter>Visual\Levels\L_1\MapParts</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

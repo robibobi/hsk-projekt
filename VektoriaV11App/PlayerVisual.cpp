@@ -23,12 +23,13 @@ void PlayerVisual::tick(float deltaMillis, float time){
 
 void PlayerVisual::loadMaterial(){
 	mPlayerMaterial.MakeTextureImage("textures\\boulder_COLOR.png");
-	mPlayerMaterial.MakeTextureBump("textures\\boulder_NRM.png");
-	mPlayerMaterial.MakeTextureSpecular("textures\\boulder_SPEC.png");
-	mPlayerMaterial.MakeTextureGlow("textures\\boulder_SPEC.png");
+	//mPlayerMaterial.MakeTextureBump("textures\\boulder_NRM.png");
+	//mPlayerMaterial.MakeTextureSpecular("textures\\boulder_SPEC.png");
+	mPlayerMaterial.MakeTextureGlow("textures\\boulder_COLOR.png");
 }
 
 void PlayerVisual::loadMesh(){
-	mPlayerMesh.Init(0.25, &mPlayerMaterial, 12, 12);
+	mPlayerMesh.Init(0.15, &mPlayerMaterial, 12, 12);
 	mPlacement.AddGeo(&mPlayerMesh);
+	mPlacement.TranslateY(0.15);
 }

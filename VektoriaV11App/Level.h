@@ -12,7 +12,7 @@ class Level
 
 public:
 	Level();
-	~Level();
+	virtual ~Level();
 
 	virtual void initialize(Vektoria::CScene* scene);
 

@@ -1,10 +1,10 @@
-#include "Level1Part2.h"
+#include "Level1Part4.h"
 
 
-Level1Part2::Level1Part2() : MapPart(2)
+Level1Part4::Level1Part4() : MapPart(4)
 {
-	loadMesh("level\\level1\\part2\\part.obj");
-	
+	loadMesh("level\\level1\\part4\\part.obj");
+
 	loadMaterial();
 
 	initGameObjects();
@@ -14,18 +14,18 @@ Level1Part2::Level1Part2() : MapPart(2)
 }
 
 
-Level1Part2::~Level1Part2()
+Level1Part4::~Level1Part4()
 {
 }
 
-void Level1Part2::loadMaterial(){
-	mGroundMaterial.MakeTextureImage("level\\level1\\part2\\part_COLOR.png");
-	mGroundMaterial.MakeTextureGlow("level\\level1\\part2\\part_GLOW.png");
+void Level1Part4::loadMaterial(){
+	mGroundMaterial.MakeTextureImage("level\\level1\\part4\\part_COLOR.png");
+	mGroundMaterial.MakeTextureGlow("level\\level1\\part4\\part_GLOW.png");
 	mGroundMesh->SetMaterial(&mGroundMaterial);
 }
 
 
-void Level1Part2::initGameObjects(){
+void Level1Part4::initGameObjects(){
 
 	mFalle1Ptr = new LochFalleVisual(Vektoria::CHVector(1.0, 0.5, 1.0));
 	mFalle1Ptr->getPlacement()->Translate(0, 0, -3);

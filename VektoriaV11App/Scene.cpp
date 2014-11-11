@@ -10,6 +10,7 @@ Scene::Scene()
 
 Scene::~Scene()
 {
+	
 }
 
 void Scene::init(CScene* scene, CRoot* root){
@@ -27,7 +28,8 @@ void Scene::initViewport(Vektoria::CViewport* viewport){
 
 void Scene::loadLevel(int lvlNr){
 
-	mActiveLevel = mLevelLoader.loadLevel(lvlNr);
+	//auto level = mLevelLoader.loadLevel(lvlNr);
+	mActiveLevel = std::move(std::unique_ptr<Level>(new Level1()));
 	mActiveLevel->initialize(mVectoriaScene);
 
 	mCamera.setPlayerPlacement(mActiveLevel->getPlayer()->getPlacement());

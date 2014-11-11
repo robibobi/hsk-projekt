@@ -13,7 +13,7 @@ Level1::~Level1()
 
 
 void Level1::initialize(Vektoria::CScene* scene){
-	mLight1.Init(CHVector(1, 2, 1), CColor(255, 255, 255));
+	mLight1.Init(CHVector(5, 2, 1), CColor(255, 255, 255));
 	scene->AddParallelLight(&mLight1);
 }
 

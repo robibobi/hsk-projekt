@@ -28,7 +28,7 @@ void CGame::Init(HWND hwnd, CSplash * psplash)
 	// erstes Level laden
 	mScene.loadLevel(1);
 	
-	mViewPort.SetWireframeOn();
+	
 	
 }
 
@@ -39,6 +39,7 @@ void CGame::Tick(float fTime, float fTimeDelta)
 
 void CGame::Fini()
 {
+	
 }
 
 void CGame::WindowReSize(int iNewWidth, int iNewHeight)

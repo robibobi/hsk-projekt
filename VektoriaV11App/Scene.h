@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Level.h"
+#include "Level1.h"
 #include "MapPartManager.h"
 #include "LevelLoader.h"
 #include "Camera.h"

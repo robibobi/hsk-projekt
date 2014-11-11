@@ -4,9 +4,9 @@
 
 
 
-// Logik für Spieler ( Kugel )
+// Logik für Spieler und Kamera ( Kugel )
 
-// Muss GameObject erweitern
+
 class Player : public GameObject
 {
 public:

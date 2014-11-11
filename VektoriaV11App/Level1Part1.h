@@ -1,6 +1,7 @@
 #pragma once
 #include "MapPart.h"
-
+#include "LochFalleVisual.h"
+#include "TangentSpaceHelper.h"
 #include "root.h"
 
 class Level1Part1 : public MapPart
@@ -11,7 +12,13 @@ public:
 
 private:
 	
+	// Um das löschen der GameObjects kümmert sich der 
+	// zuständige MapPart
+	LochFalleVisual* mFalle1Ptr;
+	LochFalleVisual* mFalle2Ptr;
+
+
 	void loadMaterial();
-	
+	void initGameObjects();
 };
 
